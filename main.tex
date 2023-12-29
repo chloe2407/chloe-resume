@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Chloe Lam
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Chloe Lam} \\ \vspace{1pt}
+    \small 604-803-1708 $|$ \href{mailto:x@x.com}{\underline{chloelam2407@gmail.com}} $|$ 
+    \href{https://chloelam.ca/}{\underline{chloelam.ca}} $|$
+    \href{https://linkedin.com/in/...}{\underline{linkedin.com/in/chloe-lam-2407}} $|$
+    \href{https://github.com/...}{\underline{github.com/chloe2407}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto}{Toronto, ON}
+      {Honours Bachelor of Science in Computer Science, Minor in Statistics and Mathematics}{Sept. 2021 -- Present}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{May 2023 -- August 2023}
+      {Provincial Health Services Authority (BC Renal)}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Developed a new Flutter application that enhanced patient treatment by 30\%, utilizing Firebase for efficient data storage and retrieval. The app's structure adheres to SOLID Design Principles and Clean Architecture, allowing for future scalability.}
+        \resumeItem{Created comprehensive documentation for the application and delivered a presentation to a large development team, effectively communicating complex technical concepts to future developers. This resulted in a 20\% decrease in onboarding time for new team members.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Software Developer}{Sep. 2022 -- Dec. 2022}
+      {UofTinder (University of Toronto)}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Mapped out the project layout using CRC and applied SOLID Design Principles and Clean Architecture Model, resulting in a 20\% reduction in code complexity and improved maintainability.}
+        \resumeItem{Implemented View screen code interactions using the Model View Presenter (MVP) design pattern, resulting in a 30\% increase in user engagement and smoother navigation.}
+        \resumeItem{Wrote comprehensive unit tests for the Android User Interface, Firebase database, and backend computations, achieving a 95\% code coverage and ensuring the reliability and stability of the application.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Coordinator}{July 2022 -- June 2023}
+      {University College Literary and Athletic Society (University of Toronto)}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Maintained and updated organization's event and announcement databases on the website, ensuring 100\% accuracy and timely updates for members and visitors.}
+        \resumeItem{Explored opportunities to enhance website accessibility and visual appeal through redesign initiatives, resulting in a 20\% increase in user engagement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{June. 2020 -- Sept. 2020}
+      {CodeCa}{Vancouver, BC}
+      \resumeItemListStart
+        \resumeItem{Built 5+ webpages using HTML, CSS, and ReactJS, following Figma designs, effectively showcasing company activities and increasing user engagement.}
+        \resumeItem{Utilized Agile structure to provide biweekly updates and gather feedback in team meetings, resulting in a 20\% improvement in the company's image and responsiveness to user needs.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{UniPlanit} $|$ \emph{ReactJS,  Github, Visual Studio Code}}{May 2022 -- July 2022}
+          \resumeItemListStart
+            \resumeItem{Developed a MERN stack web application with a team of four students, facilitating the creation of custom timetables for university students.}
+            \resumeItem{Led weekly progress meetings, ensuring effective communication among team members and timely updates on project milestones, resulting in the successful delivery of the project within the designated timeline.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Petudier} $|$ \emph{Javascript, HTML, CSS, Github}}{June 2022}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a productivity-enhancing Google Extension in collaboration with two other students, enabling users to block distracting websites during study sessions, fostering self-improvement and effective time management within a tight deadline of 24 hours.}
+          \resumeItemListEnd
+        \resumeProjectHeading   {\textbf{r/HowCovidImpactsMentalHealth} $|$ \emph{Python, Pandas, NumPy, Matplotlib, Scikit-learn}}{Sept. 2021 -- Dec. 2021}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team of three students to conduct an analysis of the impact of COVID-19 on mental health through social media data, utilizing data visualization techniques to graphically represent the findings.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages and Tools}{: ReactJS, HTML, CSS, JavaScript, Java, Python, C, R, Dart, Flutter, Git, Github, Gitlab, VS Code, Visual Studio, PyCharm, IntelliJ, Android Studio, Jupyter, Firebase, Firestore, pandas, NumPy, Matplotlib, SSH, Figma, Adobe XD, Canva} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
